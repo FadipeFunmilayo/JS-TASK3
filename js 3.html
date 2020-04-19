@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <title>javascript task3</title>
+<body>
+    <script>
+        function output(Number) {
+    let NumArr = [];
+    for (let i = 1; i <= Number; i++) {
+
+        if (i % 2 == 0 && i % 3 == 0 && i % 5 == 0) {
+            NumArr.push("yu-gi-oh");
+
+        } else if (i % 3 == 0 && i % 5 == 0) {
+            NumArr.push("gi-oh");
+
+        } else if (i % 2 == 0 && i % 3 == 0) {
+            NumArr.push("yu-gi");
+
+        } else if (i % 2 == 0 && i % 5 == 0) {
+            NumArr.push("yu-oh");
+
+        } else if (i % 2 == 0) {
+            NumArr.push("yu");
+
+        } else if (i % 3 == 0) {
+            NumArr.push("gi");
+
+        } else if (i % 5 == 0) {
+            NumArr.push("oh");
+
+        } else {
+            NumArr.push(i);
+        }
+    }
+    return NumArr;
+}
+console.log(output(100)); 
+console.log(output(50));
+</script>
